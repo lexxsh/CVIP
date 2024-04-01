@@ -26,7 +26,7 @@ CNN 구조와 자세한 모델의 내용에 대해 살펴봅시다.
 
 ## 1. Introduction
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/15f285db-8602-4adb-ba6a-10d845474bea/acdbef81-51b6-466e-9ebc-89edb41e1d70/Untitled.png)
+![Untitled](https://github.com/lexxsh/Like_Lion_Assignment/assets/110239629/fcfd97ed-2000-4c57-9b5a-fa941cf6008b)
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/15f285db-8602-4adb-ba6a-10d845474bea/97adf7ed-52bf-47c1-807c-af9c92e6d94b/Untitled.png)
 
@@ -181,3 +181,13 @@ dropout을 간단하게 소개하자면 서로 연결된 layer들 중에서 0~1 
 alextnet에서는 첫 두 fc layer 뒤에 dropout을 적용하였습니다!
 
 dropout에서 자세한 내용은 https://heytech.tistory.com/127 을 참고하면 좋을 것 같습니다.
+
+
+
+## REFER
+
+| # | Title | type | link |
+| --- | --- | --- | --- |
+| [1] | https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html |  |  |
+| [2] | https://jjuon.tistory.com/22 |  |  |
+| [3] | https://velog.io/@lolo5329/%EB%85%BC%EB%AC%B8-%EC%9A%94%EC%95%BD-ImageNet-Classification-with-Deep-Convolutional-Neural-Networks |  |  |
