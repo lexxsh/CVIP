@@ -28,7 +28,7 @@ CNN 구조와 자세한 모델의 내용에 대해 살펴봅시다.
 
 ![Untitled](https://github.com/lexxsh/Like_Lion_Assignment/assets/110239629/fcfd97ed-2000-4c57-9b5a-fa941cf6008b)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/15f285db-8602-4adb-ba6a-10d845474bea/97adf7ed-52bf-47c1-807c-af9c92e6d94b/Untitled.png)
+![Untitled](https://github.com/lexxsh/Like_Lion_Assignment/assets/110239629/a8ac9db7-1f32-49d2-a4a4-e1c719fa4ce3)
 
 - Standard feedforward neural network (FNN) -  다층 퍼셉트론
     
@@ -92,9 +92,9 @@ standard 방법은 tanh 혹은 sigmoid를 사용하는 방법입니다. 그러�
 
 따라서 본 논문에서는 이를 해결하기 위해 non-saturating 이며 비선형성인 ReLU를 참조합니다.  
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/15f285db-8602-4adb-ba6a-10d845474bea/907db592-f8c4-4b37-8e7f-7b0a2b797fd8/Untitled.png)
+![Untitled (31)](https://github.com/lexxsh/Like_Lion_Assignment/assets/110239629/fb8ac12c-20ca-4885-9b11-bbb7b868dd28)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/15f285db-8602-4adb-ba6a-10d845474bea/5bf43c5c-848b-4397-a0d4-25419c7e761d/Untitled.png)
+![Untitled (32)](https://github.com/lexxsh/Like_Lion_Assignment/assets/110239629/4e8fe0c4-1028-4dee-89c6-11a5abad16e7)
 
 오른쪽 그래프를 보게되면 ReLU(solid line)이 25% 오류에 도달하기 까지의 속도가 tanh(dashed line)보다 매우 빠른것을 확인할 수 있습니다.
 
@@ -120,20 +120,20 @@ GPU 여러 개를 사용한 병렬처리 기법으로 학습시간을 획기적�
 
 자세한 건 위 페이지 참고 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/15f285db-8602-4adb-ba6a-10d845474bea/c12adba2-03be-490d-a85b-1805e069da02/Untitled.png)
+![Untitled (33)](https://github.com/lexxsh/Like_Lion_Assignment/assets/110239629/9b9b0565-bae7-4ec2-a513-3beadfdf8e73)
 
 측면 억제 (Lateral Inhibition)는 주변 픽셀 간의 경쟁적인 상호 억제를 의미 → LRN에서 중요한 포인트
 LRN은 사용하는 이유는 이미지의 인접화소들을 억제시키고 특징을 부각시키기 위함입니다. 그 결과, 정확도가 1.4% 향상되었습니다. LRN은 신경생물학에서 그 원리를 가져왔습니다. 예컨대, 밝은 빛을 보면 눈이 어두워진다거나, 특정 사물에 집중하면 그 부분만 집중하여 보이게 되는 현상
 
 헤르만 격자를 통해서 참고하면 될 듯합니다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/15f285db-8602-4adb-ba6a-10d845474bea/3b579956-1d99-4876-a02d-d77afb7c38f2/Untitled.png)
+![Untitled (34)](https://github.com/lexxsh/Like_Lion_Assignment/assets/110239629/2fcd5ebf-5742-42a7-abd9-7d4c02292298)
 
 ### 3-4 Overlapping Pooling
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/15f285db-8602-4adb-ba6a-10d845474bea/d997cc48-1ead-49cd-8792-a1ebe751d3c3/Untitled.png)
+![Untitled (39)](https://github.com/lexxsh/Like_Lion_Assignment/assets/110239629/391d55db-3a91-4890-a89d-45b8806fc36b)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/15f285db-8602-4adb-ba6a-10d845474bea/7c6f528d-5b45-45bc-bfd5-cb04a6fd7bda/Untitled.png)
+![Untitled (35)](https://github.com/lexxsh/Like_Lion_Assignment/assets/110239629/613f0c01-9bd3-4f17-af1a-3096417e7c52)
 
 Pooling Layer - 동일한 커널 맵 내의 이웃하는 뉴런 그룹의 출력을 요약 및 Summary 제공
 
@@ -143,7 +143,7 @@ Pooling Layer - 동일한 커널 맵 내의 이웃하는 뉴런 그룹의 출력
 
 전체적인 구조는 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/15f285db-8602-4adb-ba6a-10d845474bea/441577e6-c4a8-4e59-8798-cfb9a7a400f5/Untitled.png)
+![Untitled (36)](https://github.com/lexxsh/Like_Lion_Assignment/assets/110239629/f752f3ba-2069-41c5-b28d-6b1dd9c4b169)
 
 다음과 같으며 자세한 내용은 다음 포스팅에 코드와 함께 작성하도록 하겠습니다.
 
@@ -165,11 +165,11 @@ Pooling Layer - 동일한 커널 맵 내의 이웃하는 뉴런 그룹의 출력
     
     이미지에서 RGB 채널의 intensity를 변경 후 RGB값에 PCA를 적용하였습니다.
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/15f285db-8602-4adb-ba6a-10d845474bea/0166740c-87a2-43c7-9501-ec8dc0597d92/Untitled.png)
+    ![Untitled (38)](https://github.com/lexxsh/Like_Lion_Assignment/assets/110239629/f014a7cd-826b-48b5-83fa-f1a1e314103d)
     
     위 값들을 각각 이미지 픽셀해 저장하였습니다.
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/15f285db-8602-4adb-ba6a-10d845474bea/1b7013c4-4211-4330-b56d-0db6ecdd1ca5/Untitled.png)
+    ![Untitled (37)](https://github.com/lexxsh/Like_Lion_Assignment/assets/110239629/5098ef89-a329-4bb0-819a-e53288165d98)
     
 
 ### 4-2 Dropout
