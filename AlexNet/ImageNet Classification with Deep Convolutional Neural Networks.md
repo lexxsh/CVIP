@@ -186,8 +186,8 @@ dropout에서 자세한 내용은 https://heytech.tistory.com/127 을 참고하�
 
 ## REFER
 
-| # | Title | type | link |
-| --- | --- | --- | --- |
-| [1] | https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html |  |  |
-| [2] | https://jjuon.tistory.com/22 |  |  |
-| [3] | https://velog.io/@lolo5329/%EB%85%BC%EB%AC%B8-%EC%9A%94%EC%95%BD-ImageNet-Classification-with-Deep-Convolutional-Neural-Networks |  |  |
+| # | Title |
+| --- | --- |
+| [1] | https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html |
+| [2] | https://jjuon.tistory.com/22 |
+| [3] | https://velog.io/@lolo5329/%EB%85%BC%EB%AC%B8-%EC%9A%94%EC%95%BD-ImageNet-Classification-with-Deep-Convolutional-Neural-Networks |
