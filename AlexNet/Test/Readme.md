@@ -8,5 +8,5 @@
 | 날짜        | 활동                                | 결과                                           | 피드백                                           |
 |-------------|-------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | 2024-04-05  | Alexnet model을 바탕으로한 실습 코드 작성 + 데이터셋 적용 |**Train Loss**: 0.2104 **Train Accuracy**: 92.812% <br>   **Test Loss**: 0.5733 **Test Accuracy**: 83.42% |
-| 2024-04-06  | | 여러가지 Augmentation 조정했응나 별 효과 없음, 오히려 더 떨어지는 경우 발생 기본 centor crop 및 수평 전환만 하는게 베스트 batch                                                                   size 조정도 해보았으나 기존과 비슷하게 작용 |**Train Loss**: 0.2104 **Train Accuracy**: 92.812% <br> **Test Loss**: 0.5733 **Test Accuracy**: 83.42% <br>
+| 2024-04-06  | 여러가지 Augmentation 조정했응나 별 효과 없음, 오히려 더 떨어지는 경우 발생 기본 centor crop 및 수평 전환만 하는게 베스트 batch                                                                   size 조정도 해보았으나 기존과 비슷하게 작용 |**Train Loss**: 0.2104 **Train Accuracy**: 92.812% <br> **Test Loss**: 0.5733 **Test Accuracy**: 83.42% <br>
                                                              **Train Loss**: 0.2104 **Train Accuracy**: 92.812% <br>   **Test Loss**: 0.5733 **Test Accuracy**: 83.42%  |
