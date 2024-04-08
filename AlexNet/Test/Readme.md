@@ -14,3 +14,17 @@
 
 Model Fine Tuning #1
 
+| 레이어 | 첫 번째 모델 | 두 번째 모델 |
+|-------|-------------------|-------------------|
+| Conv1 | Conv2d(11x11), ReLU, LocalResponseNorm, MaxPool2d(3x3) | Conv2d(3x3), ReLU, Conv2d(3x3), ReLU, MaxPool2d(3x3) |
+| Conv2 | Conv2d(5x5), ReLU, LocalResponseNorm, MaxPool2d(3x3) | Conv2d(3x3), ReLU, Conv2d(3x3), ReLU, MaxPool2d(2x2) |
+| Conv3 | Conv2d(3x3), ReLU | Conv2d(3x3), ReLU, Conv2d(3x3), ReLU, MaxPool2d(2x2) |
+| Conv4 | Conv2d(3x3), ReLU | Conv2d(3x3), ReLU, Conv2d(3x3), ReLU, MaxPool2d(2x2) |
+| Conv5 | Conv2d(3x3), ReLU, MaxPool2d(3x3) | Conv2d(3x3), ReLU, Conv2d(3x3), ReLU, MaxPool2d(2x2) |
+| Conv6 | - | Conv2d(3x3), ReLU, Conv2d(3x3), ReLU, MaxPool2d(2x2) |
+| Conv7 | - | Conv2d(3x3), ReLU, Conv2d(3x3), ReLU, MaxPool2d(2x2) |
+| FC1   | Linear, ReLU, Dropout | Linear, ReLU, Dropout |
+| FC2   | Linear, ReLU, Dropout | Linear, ReLU, Dropout |
+| FC3   | Linear | Linear |
+
+이제 각 모델에서 사용된 레이어를 간단히 비교할 수 있습니다.
