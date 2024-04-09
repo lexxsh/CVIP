@@ -9,7 +9,8 @@
 |-------------|-------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | 2024-04-05  | Alexnet model을 바탕으로한 실습 코드 작성 + 데이터셋 적용 |**Train Loss**: 0.2104 **Train Accuracy**: 92.812% <br>   **Test Loss**: 0.5733 **Test Accuracy**: 83.42% |
 | 2024-04-06  | 다양한 Augmentation 조정 : 성능감소 <br> batch-size 조정: 변화 없음 |**Train Loss**: 0.4849 **Train Accuracy**: 83.224 % <br> **Test Loss**: 0.6027 **Test Accuracy**: 79.51 %|
-| 2024-04-07  | 모델 파인튜닝 -> 자제한 내용은 아래에 정리 예정. |**Train Loss**:  0.1734 **Train Accuracy**: 94.204 % <br> **Test Loss**: 0.5207 **Test Accuracy**: 84.38 %|
+| 2024-04-07  | 모델 파인튜닝#1 -> 자제한 내용은 아래에 정리 예정. |**Train Loss**:  0.1734 **Train Accuracy**: 94.204 % <br> **Test Loss**: 0.5207 **Test Accuracy**: 84.38 %|
+| 2024-04-08  | 모델 파인튜닝#2 -> 자제한 내용은 아래에 정리 예정. |Epoch 8에서 터짐..<br> **Train Loss**:  0.6761 **Train Accuracy**: 77.06 % <br> **Test Loss**: 0.6053 **Test Accuracy**: 79.4 % |
 
 
 Model Fine Tuning #1
@@ -21,8 +22,6 @@ Model Fine Tuning #1
 | Conv3 | Conv2d(3x3), ReLU | Conv2d(3x3), ReLU, Conv2d(3x3), ReLU, MaxPool2d(2x2) |
 | Conv4 | Conv2d(3x3), ReLU | Conv2d(3x3), ReLU, Conv2d(3x3), ReLU, MaxPool2d(2x2) |
 | Conv5 | Conv2d(3x3), ReLU, MaxPool2d(3x3) | Conv2d(3x3), ReLU, Conv2d(3x3), ReLU, MaxPool2d(2x2) |
-| Conv6 | - | Conv2d(3x3), ReLU, Conv2d(3x3), ReLU, MaxPool2d(2x2) |
-| Conv7 | - | Conv2d(3x3), ReLU, Conv2d(3x3), ReLU, MaxPool2d(2x2) |
 | FC1   | Linear, ReLU, Dropout | Linear, ReLU, Dropout |
 | FC2   | Linear, ReLU, Dropout | Linear, ReLU, Dropout |
 | FC3   | Linear | Linear |
@@ -33,3 +32,18 @@ Model Fine Tuning #1
 |-------------|------------|
 | 첫 번째 모델 | 약 58.1M   |
 | 두 번째 모델 | 약 15.9M   |
+
+Model Fine Tuning #2
+
+| 레이어 | 세 번째 모델 |
+|-------|-------------------|
+| Conv1 | Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, MaxPool2d(3x3) |
+| Conv2 | Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, MaxPool2d(3x3) |
+| Conv3 | Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, MaxPool2d(3x3)  |
+| Conv4 | Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, MaxPool2d(3x3) |
+| Conv5 | Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, MaxPool2d(3x3) |
+| FC1   | Linear, ReLU, Dropout |
+| FC2   | Linear, ReLU, Dropout |
+| FC3   | Linear |
+
+colab이 epoch 8에서 붕괴되버렸습니다...

@@ -14,6 +14,8 @@
 
 CNN 구조와 자세한 모델의 내용에 대해 살펴봅시다.
 
+#### 참고로 본 논문을 구현한 실습코드와 파인튜닝 다음 링크에서 확인해주세요! https://github.com/lexxsh/CVIP/tree/main/AlexNet/Test
+
 ---
 
 # Key Points
