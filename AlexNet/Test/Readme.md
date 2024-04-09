@@ -35,15 +35,14 @@ Model Fine Tuning #1
 
 Model Fine Tuning #2
 
-| 레이어 | 첫 번째 모델 | 두 번째 모델 |
-|-------|-------------------|-------------------|
-| Conv1 | Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, MaxPool2d(3x3), |
-| Conv2 | Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, MaxPool2d(3x3), |
-| Conv3 | Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, MaxPool2d(3x3),  |
+| 레이어 | 세 번째 모델 |
+|-------|-------------------|
+| Conv1 | Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, MaxPool2d(3x3) |
+| Conv2 | Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, MaxPool2d(3x3) |
+| Conv3 | Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, MaxPool2d(3x3)  |
 | Conv4 | Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, MaxPool2d(3x3) |
 | Conv5 | Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, MaxPool2d(3x3) |
-| FC1   | Linear, ReLU, Dropout | Linear, ReLU, Dropout |
-| FC2   | Linear, ReLU, Dropout | Linear, ReLU, Dropout |
-| FC3   | Linear | Linear |
-
+| FC1   | Linear, ReLU, Dropout |
+| FC2   | Linear, ReLU, Dropout |
+| FC3   | Linear |
 colab이 epoch 8에서 붕괴되버렸습니다...
