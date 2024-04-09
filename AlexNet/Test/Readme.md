@@ -45,4 +45,5 @@ Model Fine Tuning #2
 | FC1   | Linear, ReLU, Dropout |
 | FC2   | Linear, ReLU, Dropout |
 | FC3   | Linear |
+
 colab이 epoch 8에서 붕괴되버렸습니다...
