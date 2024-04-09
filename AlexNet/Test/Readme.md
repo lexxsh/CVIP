@@ -22,7 +22,6 @@ Model Fine Tuning #1
 | Conv3 | Conv2d(3x3), ReLU | Conv2d(3x3), ReLU, Conv2d(3x3), ReLU, MaxPool2d(2x2) |
 | Conv4 | Conv2d(3x3), ReLU | Conv2d(3x3), ReLU, Conv2d(3x3), ReLU, MaxPool2d(2x2) |
 | Conv5 | Conv2d(3x3), ReLU, MaxPool2d(3x3) | Conv2d(3x3), ReLU, Conv2d(3x3), ReLU, MaxPool2d(2x2) |
-
 | FC1   | Linear, ReLU, Dropout | Linear, ReLU, Dropout |
 | FC2   | Linear, ReLU, Dropout | Linear, ReLU, Dropout |
 | FC3   | Linear | Linear |
@@ -43,7 +42,6 @@ Model Fine Tuning #2
 | Conv3 | Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, MaxPool2d(3x3),  |
 | Conv4 | Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, MaxPool2d(3x3) |
 | Conv5 | Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, Conv2d(3x3), Batch nomalization, ReLU, MaxPool2d(3x3) |
-
 | FC1   | Linear, ReLU, Dropout | Linear, ReLU, Dropout |
 | FC2   | Linear, ReLU, Dropout | Linear, ReLU, Dropout |
 | FC3   | Linear | Linear |
